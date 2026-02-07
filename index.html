@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalRozgar | Apne Shehar Ka Rozgar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Google Maps SDK -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=mFtKjtvm1Ngn0M8PKurT7akqfr3dGuY3IKkczOp2XBVrqzaV&libraries=places"></script>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f9fa;
+      }
+      .google-blue { color: #4285f4; }
+      .bg-google-blue { background-color: #4285f4; }
+      .border-google-blue { border-color: #4285f4; }
+      
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+
+      /* Marquee Animation */
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-1 * 160px * 6)); } /* Adjust based on card width + gap */
+      }
+
+      .marquee-container {
+        display: flex;
+        width: max-content;
+        animation: scroll 25s linear infinite;
+      }
+
+      .marquee-container:hover {
+        animation-play-state: paused;
+      }
+
+      @media print {
+        .no-print { display: none; }
+      }
+
+      /* Custom Map Marker Styling */
+      .custom-marker {
+        position: relative;
+      }
+      .marker-label {
+        background: white;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 900;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        text-transform: uppercase;
+        white-space: nowrap;
+        position: absolute;
+        bottom: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

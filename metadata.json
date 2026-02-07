@@ -1,0 +1,8 @@
+{
+  "name": "LocalRozgar - Jobs & Services Portal",
+  "description": "A clean, Google-style job and service provider portal for local Indian communities, featuring role-based registration, job approvals, and local service bookings.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ]
+}
